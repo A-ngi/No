@@ -1,9 +1,14 @@
-var audio2 = new Audio('./audio/Yamete Kudasai.mp3');
+var audioYame = new Audio('./audio/Yamete Kudasai.mp3');
 
-document.getElementById('not').onclick = function(e) {
-    audio2.play(); }
+document.getElementById('not').ondblclick = function() {
+    audioYame.play(); }
 
-var audio = new Audio('./audio/jojo no no.mp3'); 
 
-document.getElementById('no').onclick = function(e) {
-    audio.play(); }
+var audioNonono = new Audio('./audio/jojo no no.mp3'); 
+var audioNo = new Audio('./audio/no.mp3');
+
+document.getElementById('no').ondblclick = function() {
+    audioNonono.play(); }
+
+document.getElementById('no').onclick = function() {
+    audioNo.play(); }
