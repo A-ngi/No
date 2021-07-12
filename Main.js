@@ -5,10 +5,15 @@ document.getElementById('not').ondblclick = function() {
 
 
 var audioNonono = new Audio('./audio/jojo no no.mp3'); 
-var audioNo = new Audio('./audio/no.mp3');
 
 document.getElementById('no').ondblclick = function() {
     audioNonono.play(); }
 
 document.getElementById('no').onclick = function() {
-    audioNo.play(); }
+    let numeroRandom = Math.random() ;    
+    numeroRandom *= 500 ;
+    Math.floor(numeroRandom) ;
+    let total = numeroRandom + 'px' ;
+    this.style.left=total ;
+    let audioNo = new Audio('./audio/no.mp3');  
+    audioNo.play() ; }
